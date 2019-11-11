@@ -40,45 +40,69 @@ public class Task2Inhabitants {
             inhabitants[i] = input.nextInt();
         }
 
-//        Arrays.sort(inhabitants);
-//        int count=0;
-//        while(count<=8){
-//            for (int i = 0; i < inhabitants.length-1; i++){
-//                if(inhabitants[i]==0){
-//                    inhabitants[i+1]=inhabitants[i+1]/2;
-//                }
-//            }
-//            System.out.println(Arrays.toString(inhabitants));
-//
-//            count=1;
-//            for(int i=0;i<inhabitants.length;i++) {
-//                if (inhabitants[i] == 0) {
-//                    count++;
-//                }
-//            }
-//        }
-
-       for(int i=0; ; i++) {
-           System.out.println("Day " + i + " " + Arrays.toString(inhabitants));
-           int zeros=0;
-           for(int j=0;j<inhabitants.length-1;j++){
-               if(inhabitants[j+1]==0){
-                   inhabitants[j]/=2;
-                   zeros++;
-                   continue;
-               }
-               if(inhabitants[j]==0){
-                   inhabitants[j+1]/=2;
-                   zeros++;
-                   j++;
-                   continue;
-               }
-           }
-           if(zeros==7) break;
+        // to keep days use do while loop
+        // create days for keeping days
+        // sumOfppl for counting
+        // for loop first dividing next days
+        // next for loop for copying all the values
+        // check while loop if there is sumOfppl
 
 
-       }
+        //TODO. Write you code below this line.
+        // days i use for counting days
+        // sumOfppl => used for counting sumOfpp
+        //
+        // if first index is ZERO
+        // if last index is ZERO
+        // if middle index is ZERO
+
+        // i use do while loop in order to count days
+
+        // int [] array = new array[inhabitants.length];
+
+        // for(int i=0; i<inhabitants.length; i++){
+        //   array[i]=inhabitants[i];
+        // }
+
+        int day =0;
+        int sumOfppl=0;
+
+        int [] nextDay=inhabitants;
+
+        System.out.println("Day "+day+ " "+Arrays.toString(inhabitants));
+
+        do{
+
+            day++;
+            sumOfppl=0;
+
+            for(int i=0; i<inhabitants.length; i++){
+
+                if(i!=0&&i!=inhabitants.length-1&& inhabitants[i]==0){
+                    nextDay[i-1] = inhabitants[i-1]/2;
+                    nextDay[i+1] =inhabitants[i+1]/2;
+                }
+
+                if(i==0&&inhabitants[i]==0){
+                    nextDay[i+1]=inhabitants[i+1]/2;
+                }
+
+                if(i==inhabitants.length-1&&inhabitants[i]==0){
+                    nextDay[i-1] = inhabitants[i-1]/2;
+                }
+
+
+            }
+            System.out.println("Day "+day+ " "+Arrays.toString(nextDay));
+
+            for(int i=0; i<inhabitants.length; i++){
+                inhabitants[i]=nextDay[i];
+                sumOfppl+=inhabitants[i];
+            }
+
+
+        }while(sumOfppl!=0);
+
         System.out.println("---- EXTINCT ----");
-
     }
 }

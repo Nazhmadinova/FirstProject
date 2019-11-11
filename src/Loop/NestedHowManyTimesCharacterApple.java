@@ -2,7 +2,7 @@ package Loop;
 
 import java.util.Scanner;
 
-public class NestedHowManyTimesCharacter {
+public class NestedHowManyTimesCharacterApple {
     public static void main(String[] args) {
         //Write a program that asks the user to enter a word.
         // Print out how many times a character is in the given word.
