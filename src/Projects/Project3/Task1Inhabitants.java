@@ -31,30 +31,29 @@ public class Task1Inhabitants {
         //Code:
         //System.out.println(Arrays.toString(inhabitants)));
         Scanner input = new Scanner(System.in);
-        int [] inhabitants= new int[8];
+        int[] inhabitants = new int[8];
         for(int i=0; i<inhabitants.length; i++) {
             inhabitants[i] = input.nextInt();
         }
+
         int day=0;
-        System.out.println("Day "+day+" "+Arrays.toString(inhabitants));
-
-
-        int count=0;
-        day=1;
-        while(count<=8) {
-
-            for (int i = 0; i < inhabitants.length; i++) {
-                inhabitants[i] = inhabitants[i] / 2;
-            }
-            System.out.println("Day "+day+" "+Arrays.toString(inhabitants));
-            count=1;
-            for(int i=0;i<inhabitants.length;i++){
-                if(inhabitants[i]==0){
-                    count++;
-                }
-            }
+        int sumOfppl=0;
+        System.out.println("Day "+day+" "+ Arrays.toString(inhabitants));
+        do{
             day++;
-        }
+            sumOfppl=0;
+
+            for(int i=0; i<inhabitants.length; i++){
+
+                inhabitants[i]= inhabitants[i]/2;
+                sumOfppl+=inhabitants[i];
+
+            }
+
+            System.out.println("Day "+day+" "+Arrays.toString(inhabitants));
+
+        }while(sumOfppl!=0);
+
         System.out.println("---- EXTINCT ----");
 
 
