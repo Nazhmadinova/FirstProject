@@ -11,29 +11,21 @@ public class CoverMe {
     //keep in mind that coverME value can be of any length
 
     public static void main(String[] args) {
-        System.out.println(coverString("hello hiiiiii", "ello") ) ;
+        System.out.println(coverString("mememe memome", "me") ) ;
     }
-//    shorter way:
-//    public static String coverString(String main, String coverME) {
-//        if(main.contains(coverME)){
-//            main=main.replace(coverME,"["+coverME+"]");
-//            return main;
-//        }
-//
-//        return "["+main+"]";
-//
-//    }
 
     public static String coverString(String main, String coverME) {
         String covered="";
         String covering="["+coverME+"]";
-        if(main.contains(coverME) && main.length()>coverME.length()){
-           outer: for(int i=0;i<main.length();i++){
-               if( i==0 && main.substring(i,coverME.length()).equals(coverME)){
-                   covered+=covering;
-                   i+=coverME.length();
-               }
-               covered+=main.charAt(i);
+
+        if(main.contains(coverME)){
+            for(int i=0;i<main.length();i++){
+                if (i + coverME.length() <=main.length() && main.substring(i, i + coverME.length()).equalsIgnoreCase(coverME)){
+                        covered += covering;
+                        i += coverME.length()-1;
+                } else{
+                    covered+=main.charAt(i);
+                }
            }
             return covered;
         }
