@@ -1,6 +1,6 @@
 package Constructor;
 
-public class Class {
+public class Phone {
     //Create a class Phone.
     //Instance variables: touchscreen, model, memory, color, phoneNumber.
     //Create a constructor that accepts two parameters(model, color) and set to corresponding instance variables.
@@ -13,13 +13,15 @@ public class Class {
     int memory;
     String color;
     long phoneNumber;
+    String text;
 
-    public Class(String model, String color){
+    public Phone(String model, String color){
         this.model=model;
         this.color=color;
     }
 
-    public Class(String model, String color, int memory, boolean touchscreen){
+    public Phone(String model, String color, int memory, boolean touchscreen){
+        this(model,color);
         this.touchscreen=touchscreen;
         this.model=model;
         this.color=color;
@@ -28,5 +30,35 @@ public class Class {
         }else{
             System.out.println("Invalid memory");
         }
+    }
+    //Create a method text that accepts long(phone number) and String(text) and returns boolean.
+    // Check given number length and text body.
+    //Print: “%textBody sent to %givenPhoneNumber” if length is 10 and text body is not empty then return true;
+    // Print: “Invalid phone number or text body” and return false if otherwise.
+
+    public boolean text(long number, String text){
+        String num= number+"";
+        if(num.length()==10 && !text.isEmpty()){
+            this.phoneNumber=number;
+            this.text=text;
+            System.out.println(text+" sent to "+number);
+            return true;
+        }
+        System.out.println("Invalid phone number or text body");
+        return false;
+    }
+
+    //Create a method call that accepts long (phone number). Print “Calling to %phoneNumber”
+    // if phone number length is 10. Print “Invalid phone number” if otherwise.
+
+    public void call(long number){
+        String num= number+"";
+        if(num.length()==10){
+            this.phoneNumber=number;
+            System.out.println("Calling to "+phoneNumber);
+        }else{
+            System.out.println("Invalid phone number");
+        }
+
     }
 }

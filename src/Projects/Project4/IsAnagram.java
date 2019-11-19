@@ -1,6 +1,6 @@
 package Projects.Project4;
 
-public class Task2 {
+public class IsAnagram {
     //isAnagram method checks if word1 and word2 are anagram to each other then return a boolean.
     //
     //Each letter in word1 should appear in word2 exact number of times
@@ -35,38 +35,11 @@ public class Task2 {
 
     // Required! Method name is: isAnagram(String word1, String word2)
 
-//    public static boolean isAnagram(String word1, String word2) {
-//
-//        word1 = word1.toLowerCase().trim();
-//        word2 = word2.toLowerCase().trim();
-//        int count=0;
-//        if(word1.contains(" ")){
-//            word1=word1.replace(" ","");
-//        }
-//        if(word2.contains(" ")){
-//            word2=word2.replace(" ","");
-//        }
-//
-//        if(word1.length()==word2.length()){
-//            for (int i = 0; i < word1.length(); i++) {
-//                if (word2.contains(word1.charAt(i) + "")) {
-//                    count++;
-//                }
-//            }
-//            if (count == word1.length()) {
-//                return true;
-//            }
-//        }
-//        return false;
-//    }
-
-    //Other way
     public static boolean isAnagram(String word1, String word2) {
 
-        word1 = word1.toLowerCase();
-        word2 = word2.toLowerCase();
-
-        boolean check=false;
+        word1 = word1.toLowerCase().trim();
+        word2 = word2.toLowerCase().trim();
+        int count=0;
         if(word1.contains(" ")){
             word1=word1.replace(" ","");
         }
@@ -76,15 +49,42 @@ public class Task2 {
 
         if(word1.length()==word2.length()){
             for (int i = 0; i < word1.length(); i++) {
-                if (!word2.contains(word1.charAt(i) + "")) {
-                    check=false;
+                if (word2.contains(word1.charAt(i) + "")) {
+                    count++;
                 }
-                check=true;
             }
-
+            if (count == word1.length()) {
+                return true;
+            }
         }
-        return check;
+        return false;
     }
+
+    //Other way
+//    public static boolean isAnagram(String word1, String word2) {
+//
+//        word1 = word1.toLowerCase();
+//        word2 = word2.toLowerCase();
+//
+//        boolean check=false;
+//        if(word1.contains(" ")){
+//            word1=word1.replace(" ","");
+//        }
+//        if(word2.contains(" ")){
+//            word2=word2.replace(" ","");
+//        }
+//
+//        if(word1.length()==word2.length()){
+//            for (int i = 0; i < word1.length(); i++) {
+//                if (!word2.contains(word1.charAt(i) + "")) {
+//                    check=false;
+//                }
+//                check=true;
+//            }
+//
+//        }
+//        return check;
+//    }
 
     public static void main(String[] args) {
 

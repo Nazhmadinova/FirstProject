@@ -1,6 +1,8 @@
 package ReturnMethods;
 
-public class calculator {
+import ClassObject.HouseObj;
+
+public class Calculator {
     //Create a calculator method that will take three arguments: an operator ( +, -, *, /, %)  and two numbers.
     // Perform that operation between the two numbers and return the result
 
