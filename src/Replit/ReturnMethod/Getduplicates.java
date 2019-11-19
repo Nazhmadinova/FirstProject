@@ -27,7 +27,7 @@ public class Getduplicates {
         }
         unique=unique.trim();
         String [] newR=unique.split(" ");
-        int sum=0;
+        int totalCount=0;
         for(int i=0;i<newR.length;i++){
             int count=0;
             for(int j=0;j<r.length;j++){
@@ -36,9 +36,9 @@ public class Getduplicates {
                 }
             }
             if(count>1){
-                sum+=count;
+                totalCount+=count;
             }
         }
-        return sum;
+        return totalCount;
     }
 }
