@@ -28,6 +28,7 @@ public class AccountObj {
         balance+=amount;
     }
 
+
     public void transfer(double amount){
         if(amount<=balance) {
             System.out.println(amount + "$ is transferred from your account");
