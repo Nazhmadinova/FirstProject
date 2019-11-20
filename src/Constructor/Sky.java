@@ -2,6 +2,9 @@ package Constructor;
 
 public class Sky {
 
+    String color;
+    int visibleStars;
+
     public Sky(){
         System.out.println("Hi there");
     }
@@ -22,14 +25,14 @@ public class Sky {
         this.visibleStars=visibleStars;
     }
 
-    String color;
-    int visibleStars;
 
-    //exeption it  is program:
+
+    //exception it  is program:
     public static void main(String[] args) {
         Sky refSky=new Sky(); // Sky() -> it is a constructor;
-         refSky=new Sky("Red");
+         refSky=new Sky("Red"); //resigning
         System.out.println(refSky.color);
+
 
         Sky s2=new Sky("yellow",7);
         s2.info();

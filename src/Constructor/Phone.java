@@ -21,12 +21,13 @@ public class Phone {
     }
 
     public Phone(String model, String color, int memory, boolean touchscreen){
-        this(model,color);
+        this(model,color); //chaining constructor
         this.touchscreen=touchscreen;
         this.model=model;
         this.color=color;
         if(memory>=0){
             this.memory=memory;
+            System.out.println(this.memory);
         }else{
             System.out.println("Invalid memory");
         }

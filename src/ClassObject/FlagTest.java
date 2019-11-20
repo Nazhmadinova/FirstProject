@@ -1,6 +1,6 @@
 package ClassObject;
 
-public class PaperPlane {
+public class FlagTest {
     public static void main(String[] args) {
         // Create 2 Flag objects
         // Set all values to first one only
