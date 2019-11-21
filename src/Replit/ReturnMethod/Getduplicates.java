@@ -15,7 +15,7 @@ public class Getduplicates {
     //getDup(["1","g","aabb',"7","7","2","aa"',"7"])
     //returns:3
 
-    public static int getDup(String[] r)
+    public static int getDup(String ... r)
     {
 
         String unique="";
@@ -40,5 +40,9 @@ public class Getduplicates {
             }
         }
         return totalCount;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getDup("we","s","we","s","2"));
     }
 }
