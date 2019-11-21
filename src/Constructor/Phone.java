@@ -1,5 +1,7 @@
 package Constructor;
 
+import CodingBat.String2.StarOut;
+
 public class Phone {
     //Create a class Phone.
     //Instance variables: touchscreen, model, memory, color, phoneNumber.
@@ -14,6 +16,10 @@ public class Phone {
     String color;
     long phoneNumber;
     String text;
+
+    public Phone(){
+        System.out.println("Hi"); // this constructor calls no argument constructor;
+    }
 
     public Phone(String model, String color){
         this.model=model;
