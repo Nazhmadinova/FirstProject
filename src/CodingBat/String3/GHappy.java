@@ -1,6 +1,6 @@
 package CodingBat.String3;
 
-public class gHappy {
+public class GHappy {
     public boolean gHappy(String str) {
         if (str.equals("g")) return false;
         for (int i = 0; i < str.length(); i++) {

@@ -18,7 +18,7 @@ public class Phone {
     String text;
 
     public Phone(){
-        System.out.println("Hi"); // this constructor calls no argument constructor;
+        System.out.println("Hi");
     }
 
     public Phone(String model, String color){

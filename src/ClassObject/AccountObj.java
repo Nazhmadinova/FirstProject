@@ -22,6 +22,9 @@ public class AccountObj {
     String type;
     long accountNumber;
     double balance;
+//    public AccountObj(String name){
+//
+//    }
 
     public void deposit(double amount){
         System.out.println(amount+"$ is deposited to your account");
