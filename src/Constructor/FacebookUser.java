@@ -98,17 +98,17 @@ public class FacebookUser {
     // If both you and the user are under the limit print “Friend request sent
     // to theUsersName” and increase your number of friends by one.
 
-    public boolean sendFriendRequest(FacebookUser user){
+    public boolean sendFriendRequest(FacebookUser friend){
         boolean sent=true;
         if(this.friends>=5000){
             System.out.println("You have reached the limit of friends.");
             sent=false;
-        }else if(user.friends>=5000){
-            System.out.println(user.username+" cannot accept any more friend request");
+        }else if(friend.friends>=5000){
+            System.out.println(friend.username+" cannot accept any more friend request");
             sent=false;
-        }else if(this.friends<5000 && user.friends<5000){
-            System.out.println("Friend request sent to "+user.username);
-            user.friends++;
+        }else if(this.friends<5000 && friend.friends<5000){
+            System.out.println("Friend request sent to "+friend.username);
+            friend.friends++;
             this.friends++;
             sent=true;
         }

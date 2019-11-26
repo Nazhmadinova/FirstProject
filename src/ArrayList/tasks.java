@@ -1,12 +1,14 @@
 package ArrayList;
 
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class tasks {
     // reorders the array so that all the even numbers come first and the odds come second.
     // Within those two groupings, the order doesn't matter. You can treat zero as even.
     public static void OddsEvens (ArrayList<Integer> theList) {
-        ArrayList<Integer> finished = new ArrayList<Integer>();
+        ArrayList<Integer> finished = new ArrayList();
         for(int i = 0; i < theList.size(); i++){
             if(theList.get(i)%2 == 0)
                 finished.add(i);
