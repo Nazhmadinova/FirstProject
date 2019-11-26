@@ -25,6 +25,7 @@ public class MagicNumber {
     }
 
     public  void generateEvens(int size){
+        numbers.clear();
         Random random = new Random();
         for(int i=0;i<size;i++){
            int number=1;

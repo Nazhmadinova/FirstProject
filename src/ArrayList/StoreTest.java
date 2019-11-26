@@ -5,7 +5,7 @@ import Constructor.Item;
 public class StoreTest {
     public static void main(String[] args) {
         Store first=new Store("Zhaina","Chicago");
- //       first.addItem();
+        first.addItem();
         Item item1=new Item("Socks",15);
         Item item2=new Item("coat",89);
         Item item3=new Item("bottle of water",5);
@@ -14,7 +14,6 @@ public class StoreTest {
         first.addItem(item3);
         first.seeInventory();
         System.out.println(first.numberOfItems);
-
         first.sellItem("coat");
         first.returnItem("coat");
 

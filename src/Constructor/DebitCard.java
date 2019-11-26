@@ -42,8 +42,8 @@ public class DebitCard {
         this.balance=balance;
     }
 
-    public DebitCard(long cardNumber, String holderName, double balance, String cardType, int pin){
-        this(cardNumber,holderName,balance);
+    public DebitCard(long cardNumb, String holderName, double balance, String cardType, int pin){
+        this(cardNumb,holderName,balance);
         if(cardType.equalsIgnoreCase("MasterCard") || cardType.equalsIgnoreCase("Visa")){
             this.cardType=cardType;
         }else{
