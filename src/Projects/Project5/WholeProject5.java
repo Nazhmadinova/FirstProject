@@ -51,22 +51,32 @@ public class WholeProject5 {
          *         otherwise.
          */
         // apple is sweet
-        public boolean containsSentence(String sentence,String [] words) {
+        public static boolean containsSentence(String sentence,String [] words) {
             //TODO
             String[]arr = sentence.trim().split(" ");
             int count=0;
             for(int i=0;i<arr.length;i++){
+                int c=0;
                 for(int j=0; j < words.length; j++){
                     if(arr[i].equalsIgnoreCase(words[j])){
-                        count++;
+                        c++;
                     }
                 }
+                if(c>=1){
+                    count++;
+                }
             }
-            if (count >= arr.length){
+            if (count == arr.length){
                 return true;
             }
             return false;
         }
+
+    public static void main(String[] args) {
+            String [] words={"apple", "is","sweet","hjb","hgj"};
+        System.out.println(containsSentence("apple is sweet",words));
+
+    }
         /**
          * reverse a sentence
          *
@@ -163,5 +173,7 @@ public class WholeProject5 {
             }
             return  array;
         }
+
+
     }
 

@@ -22,6 +22,7 @@ public class DebitCard {
     String cardType;
     int pin;
     double balance;
+    static int num=50;
 
     public void info(){
         System.out.println("Card number: "+cardNumber);
