@@ -9,6 +9,7 @@ public class BookObj {
     String title;
     String author;
     int pages;
+
     public BookObj(String title){
         this.title=title;
     }
