@@ -59,18 +59,23 @@ public class MyCollection {
     // The method will go through each element from the array list and create
     // a new array list with Strings that have the same length as the number given in the parameters
 
+    /**
+     * The method will go through each element from the array list and creates
+     *  a new array list with Strings that have the same length as the number given in the parameters
+     * @param words
+     * @param number
+     * @return new array list
+     */
+
     public static ArrayList<String> filterList(ArrayList<String> words, int number){
 
         ArrayList<String> newList = new ArrayList<>();
 
-        if(words.size() >= number){
-            for(int i = 0; i < number; i++){
-                newList.add(words.get(i));
+            for(int i = 0; i < words.size(); i++){
+                if(words.get(i).length() == number){
+                    newList.add(words.get(i));
+                }
             }
-        }else{
-            System.out.println("Invalid number");
-        }
-
         return newList;
     }
 
@@ -80,16 +85,17 @@ public class MyCollection {
     // The method will return an array list with only unique values
 
     public static ArrayList<String> removeDuplicates(ArrayList<String> elements){
-        ArrayList<String> unique = new ArrayList<>();
 
         String str="";
         for(int i=0; i < elements.size(); i++){
-            if(!str.contains(elements.get(i))){
-                unique.add(elements.get(i));
+            if(str.contains(elements.get(i))){
+                elements.remove(i);
+                i--;
+            }else{
                 str += elements.get(i);
             }
         }
-        return unique;
+        return elements;
     }
 
 }
