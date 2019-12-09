@@ -1,5 +1,7 @@
 package Projects.Project4;
 
+import java.util.Arrays;
+
 public class IsAnagram {
     //isAnagram method checks if word1 and word2 are anagram to each other then return a boolean.
     //
@@ -35,30 +37,30 @@ public class IsAnagram {
 
     // Required! Method name is: isAnagram(String word1, String word2)
 
-    public static boolean isAnagram(String word1, String word2) {
-
-        word1 = word1.toLowerCase().trim();
-        word2 = word2.toLowerCase().trim();
-        int count=0;
-        if(word1.contains(" ")){
-            word1=word1.replace(" ","");
-        }
-        if(word2.contains(" ")){
-            word2=word2.replace(" ","");
-        }
-
-        if(word1.length()==word2.length()){
-            for (int i = 0; i < word1.length(); i++) {
-                if (word2.contains(word1.charAt(i) + "")) {
-                    count++;
-                }
-            }
-            if (count == word1.length()) {
-                return true;
-            }
-        }
-        return false;
-    }
+//    public static boolean isAnagram(String word1, String word2) {
+//
+//        word1 = word1.toLowerCase().trim();
+//        word2 = word2.toLowerCase().trim();
+//        int count=0;
+//        if(word1.contains(" ")){
+//            word1=word1.replace(" ","");
+//        }
+//        if(word2.contains(" ")){
+//            word2=word2.replace(" ","");
+//        }
+//
+//        if(word1.length()==word2.length()){
+//            for (int i = 0; i < word1.length(); i++) {
+//                if (word2.contains(word1.charAt(i) + "")) {
+//                    count++;
+//                }
+//            }
+//            if (count == word1.length()) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     //Other way
 //    public static boolean isAnagram(String word1, String word2) {
@@ -85,6 +87,26 @@ public class IsAnagram {
 //        }
 //        return check;
 //    }
+        public static boolean isAnagram(String word1, String word2){
+        if (word1.length()==word2.length()){
+            word1=word1.toLowerCase();//listen
+            word2=word2.toLowerCase();//silent
+            word1=word1.replace(" ","");
+            word2=word2.replace(" ","");
+            String [] arr_word1 = word1.split("");
+            String [] arr_word2 = word2.split("");
+            Arrays.sort(arr_word1);
+            Arrays.sort(arr_word2);
+            if (Arrays.equals(arr_word1,arr_word2)){
+                return true;
+            }
+            else return false;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     public static void main(String[] args) {
 

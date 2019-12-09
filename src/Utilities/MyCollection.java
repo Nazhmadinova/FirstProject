@@ -1,10 +1,11 @@
 package Utilities;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class MyCollection {
+    public static int size = 7;
     //Create a static method called getStringList. This method will keep asking user to enter
     // Strings until they are done. Take all the Strings they give and put them into an
     //ArrayList. Return the ArrayList after the user has entered all the information they wanted.

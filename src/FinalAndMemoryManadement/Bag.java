@@ -11,6 +11,7 @@ public class Bag {
     public Bag(){
         color = "red";
 
+
     }
 
     public Bag(final String color){

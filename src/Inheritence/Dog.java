@@ -1,0 +1,19 @@
+package Inheritence;
+
+import AccessModifiers.Encapsulation.App;
+
+public class Dog{
+    int age;
+    String breed;
+    String name;
+    double weight;
+    String color;
+    public void bark(){
+        System.out.println("Dog is barking");
+    }
+
+    public void eat(){
+        System.out.println("Dog is eating");
+    }
+
+}

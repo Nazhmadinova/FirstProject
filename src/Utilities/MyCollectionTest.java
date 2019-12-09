@@ -23,6 +23,7 @@ public class MyCollectionTest {
 //        System.out.println(newList);
 
         // IV - part:
+
         ArrayList<String> elements = new ArrayList<>();
         elements.add("a");
         elements.add("v");

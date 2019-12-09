@@ -19,21 +19,22 @@ public class Sum67 {
         return sum;
 
         //other way
-        //int sum = 0;
-        //    boolean inRange = false;
-        //
-        //    for(int i = 0; i < nums.length; i++) {
-        //        if(nums[i] == 6)
-        //            inRange = true;
-        //
-        //        if(!inRange)
-        //            sum += nums[i];
-        //
-        //        if(inRange && nums[i] == 7)
-        //            inRange = false;
-        //
-        //    }
-        //
-        //    return sum;
+        //public int sum67(int[] nums) {
+        //  int sum = 0;
+        //  boolean check=true;
+        //  for (int i = 0; i < nums.length; i++) {
+        //      if (nums[i] == 6){
+        //      check=false;
+        //      }
+        //      if (check == true){
+        //        sum+=nums[i];
+        //      }
+        //      if (nums[i] == 7){
+        //        check = true;
+        //      }
+        //  }
+        //   return sum;
+        //}
+
     }
 }

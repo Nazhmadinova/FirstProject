@@ -1,7 +1,7 @@
 package Constructor;
 
 public class Author {
-    String name;
+    public String name;
     char gender;
     String email;
 }

@@ -1,5 +1,8 @@
 package Constructor;
 
+import AccessModifiers.Person;
+import Utilities.MyCollection;
+
 import java.awt.print.Book;
 import java.util.Scanner;
 
@@ -10,11 +13,13 @@ public class BookTaskTesting {
         //    // Create each book object and store them into a Book array.
         //    //Part 2: Loop through your array and print the name of all the books
 
+
         Scanner input =new Scanner(System.in);
         System.out.println("How many books:");
         int size=input.nextInt();
         input.nextLine();
         BookObj [] books=new BookObj[size];
+
 
         for(int i=0;i<books.length;i++){
             System.out.println("Enter the title of book "+(i+1));
