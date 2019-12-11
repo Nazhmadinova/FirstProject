@@ -16,6 +16,7 @@ public class MissingNumber {
                }
 
            }
+
            if(b == false){
                System.out.println("Missing number: "+i);
            }
