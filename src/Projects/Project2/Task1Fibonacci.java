@@ -22,4 +22,6 @@ public class Task1Fibonacci {
             t2 = sum;
         }
     }
+
+
 }

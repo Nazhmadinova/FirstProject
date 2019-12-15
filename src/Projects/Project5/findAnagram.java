@@ -149,8 +149,8 @@ public class findAnagram {
 
 
 
-    public static void main(String[] args) {
-        String []arr={"Listen", "book", "linest","linest","silent", "adf"};
-        System.out.println(Arrays.toString(findAnagram(" silent ",arr)));
-    }
+//    public static void main(String[] args) {
+//        String []arr={"Listen", "book", "linest","linest","silent", "adf"};
+//        System.out.println(Arrays.toString(findAnagram(" silent ",arr)));
+//    }
 }
