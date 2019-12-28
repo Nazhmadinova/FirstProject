@@ -13,11 +13,11 @@ public class App {
     private double size;
     private ArrayList<String> reviews;
 
+
     //Add static variable numberOfApps. This class member should be increased each time App object gets created.
     private static int numberOfApps;
 
     public App(){
-
     }
 
     //Create a constructor for App so that user can create App object only passing name, category, and size.
@@ -28,6 +28,7 @@ public class App {
         this.category = category;
         this.size = size;
         numberOfApps++;
+
     }
 
     //Encapsulate all instance variable.

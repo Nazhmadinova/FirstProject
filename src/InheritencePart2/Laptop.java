@@ -1,5 +1,7 @@
 package InheritencePart2;
 
+import Inheritence.Dog;
+
 public class Laptop {
     public Laptop(String model){
         this.model = model;
@@ -9,6 +11,17 @@ public class Laptop {
 
     public Laptop(){
         System.out.println("Hi");
+
+    }
+
+    public Dog getMyDog(){
+        System.out.println("Returning some dog");
+        Dog dog = new Dog();
+        return dog;
+    }
+
+    public static void s(){
+
     }
 
     String model;

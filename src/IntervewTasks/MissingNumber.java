@@ -1,4 +1,4 @@
-package Array;
+package IntervewTasks;
 
 public class MissingNumber {
 

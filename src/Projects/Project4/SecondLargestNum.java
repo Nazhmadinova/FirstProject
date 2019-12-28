@@ -32,6 +32,6 @@ public class SecondLargestNum {
     }
 
     public static void main(String[] args) {
-        System.out.println(secondLargestNum(12,90,60,1,12));
+        System.out.println(secondLargestNum(12,1,12,60,90));
     }
 }

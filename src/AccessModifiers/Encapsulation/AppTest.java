@@ -5,6 +5,7 @@ public class AppTest {
         App whatsapp = new App("WhatsApp", "Social Network",2.3);
         whatsapp.info();
         whatsapp.update();
+        System.out.println(whatsapp.getSize());
         whatsapp.setSize(2.6);
         whatsapp.info();
         System.out.println(App.getNumberOfApps());

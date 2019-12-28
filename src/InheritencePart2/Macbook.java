@@ -9,6 +9,7 @@ public class Macbook extends Laptop{
 
     public void appleID(){
         super.memorySize = 45;
+
     }
 
     public static void main(String[] args) {

@@ -14,6 +14,7 @@ public class Task1Fibonacci {
         System.out.println("Enter the number:");
         Scanner input =new Scanner(System.in);
         int x = input.nextInt();
+
         int t1 = 0, t2 = 1;
         for(int i = 0; i< x; i++){
             System.out.print(t1 + " ");
@@ -22,6 +23,7 @@ public class Task1Fibonacci {
             t2 = sum;
         }
     }
+
 
 
 }

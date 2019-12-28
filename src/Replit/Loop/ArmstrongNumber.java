@@ -1,6 +1,7 @@
 package Replit.Loop;
 
-public class ArmstrongNumber {
+public class
+ArmstrongNumber {
     public static void main(String[] args) {
         //Write a program to print out all Armstrong numbers between 1 and 500.
         // If sum of cubes of each digit of the number is equal to the number itself,
