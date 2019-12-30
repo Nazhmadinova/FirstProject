@@ -12,7 +12,6 @@ public interface Wifi {
     }
 
     default void getAlt(){
-
     }
 
 

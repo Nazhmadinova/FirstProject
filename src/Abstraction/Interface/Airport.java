@@ -9,6 +9,9 @@ public class Airport implements Wifi{
         System.out.println(Jet.age);
         Jet jet = new Jet();
         jet.getAlt();
+        Plane a = new Jet();
+        a.takeOff();
+        a.a();
 
 
     }

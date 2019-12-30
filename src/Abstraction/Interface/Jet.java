@@ -4,7 +4,6 @@ public class Jet extends Plane implements Wifi, GoodFood{
 
     @Override
     public void getFood() {
-
     }
 
     @Override
@@ -21,4 +20,5 @@ public class Jet extends Plane implements Wifi, GoodFood{
     public boolean isEatable() {
         return false;
     }
+
 }
