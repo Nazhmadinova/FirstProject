@@ -36,11 +36,11 @@ public class IsAnagram {
      * */
 
         public static boolean isAnagram(String word1, String word2){
+            word1=word1.replace(" ","");
+            word2=word2.replace(" ","");
         if (word1.length()==word2.length()){
             word1=word1.toLowerCase();//listen
             word2=word2.toLowerCase();//silent
-            word1=word1.replace(" ","");
-            word2=word2.replace(" ","");
             String [] arr_word1 = word1.split("");
             String [] arr_word2 = word2.split("");
             Arrays.sort(arr_word1);

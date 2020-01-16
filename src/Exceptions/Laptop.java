@@ -10,7 +10,7 @@ public class Laptop {
         Random random = new Random();
         int num = random.nextInt(11);
         System.out.println(num);
-        if(num >= 8){
+        if(num >= 1){
             throw new LaptopNotTurningOnException();
         }
 

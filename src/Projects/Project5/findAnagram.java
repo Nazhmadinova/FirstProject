@@ -99,7 +99,7 @@ public class findAnagram {
                         }
                     }
                     indexChecking = b.indexOf(("" + a.charAt(i)));
-                    if (indexChecking==-1) return false;
+                    if (indexChecking < 0) return false;
                     for (int k = 0; k < b.length(); k++) {
                         if (b.charAt(indexChecking) == b.charAt(k)) {
                             counterB++;

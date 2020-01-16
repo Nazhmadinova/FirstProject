@@ -22,8 +22,12 @@ public class ArmstrongNumber {
 
         for(int i = 0; i < num.length(); i++){
             int digit = Integer.parseInt(num.charAt(i)+"");
-
-            sum += Math.pow(digit,power);
+            //sum += Math.pow(digit,power);
+            int m = 1;
+            for(int j = 0; j < power; j++){
+                m *= digit;
+            }
+            sum += m;
         }
 
         return sum == number;

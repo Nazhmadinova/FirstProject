@@ -22,4 +22,8 @@ public class SecondMaxNumber {
         }
         return second;
     }
+
+    public static void main(String[] args) {
+        System.out.println(secondMaxNumber(2,3,1,4,5));
+    }
 }

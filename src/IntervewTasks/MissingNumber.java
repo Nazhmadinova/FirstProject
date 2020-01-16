@@ -1,5 +1,7 @@
 package IntervewTasks;
 
+import java.util.ArrayList;
+
 public class MissingNumber {
 
 
@@ -21,5 +23,36 @@ public class MissingNumber {
                System.out.println("Missing number: "+i);
            }
         }
+    }
+
+    public static int[] missingNumber(int ... numbers){
+
+        int max = numbers[0];
+        for(int i = 0; i < numbers.length; i++){
+            if(max < numbers[i]){
+                max = numbers[i];
+            }
+        }
+
+        ArrayList<Integer> missing = new ArrayList<>();
+
+        for(int i = 0; i < max; i ++){
+            boolean check = false;
+            for(int j = 0; j < numbers.length; j++){
+                if(numbers[j] == i){
+                    check = true;
+                }
+            }
+
+            if(!check){
+                missing.add(i);
+            }
+        }
+
+        int [] arr = new int[missing.size()];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = missing.get(i);
+        }
+        return arr;
     }
 }

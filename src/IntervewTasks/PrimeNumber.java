@@ -30,12 +30,12 @@ public class PrimeNumber {
 
 
     public static boolean isPrime(int num){
-        boolean check = true;
+
         for(int i = 2; i < num; i++){
             if(num % i == 0){
-                check = false;
+                return false;
             }
         }
-        return check;
+        return true;
     }
 }
