@@ -19,6 +19,10 @@ public class OSA {
         OSA a = new OSA();
         System.out.println(a.name);
 
+        String n = new String("g");
+        System.out.println(n);
+
+
     }
 
 }

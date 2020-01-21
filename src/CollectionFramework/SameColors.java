@@ -12,28 +12,27 @@ public class SameColors {
         //    Set 2 : "red","yellow","white","pink"
         //    Go through both sets and return a String of all the colors which both Sets have
 
-        String sameColors ="";
+        String sameColors = "";
 
         Set<String> colors1 = new HashSet<>();
         Collections.addAll(colors1,"red","green","black","white");
 
         Set<String> colors2 = new HashSet<>();
-        colors1.add("red");
-        colors1.add("yellow");
-        colors1.add("white");
-        colors1.add("pink");
+        colors2.add("red");
+        colors2.add("yellow");
+        colors2.add("white");
+        colors2.add("pink");
 
 //        for(String color: colors1){
 //            if(colors2.contains(color)){
-//                sameColors+=color;
+//                sameColors += color;
 //            }
 //        }
 
         for(String color: colors1){
             for(String color2: colors2){
                 if(color.equals(color2)){
-                    sameColors+=color;
-                    break;
+                    sameColors += color +" ";
                 }
             }
         }
