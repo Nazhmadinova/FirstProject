@@ -2,7 +2,7 @@ package CollectionFramework;
 
 import java.util.*;
 
-public class IteratorEx {
+public class IteratorExSet {
     public static void main(String[] args) {
 
         Set<String> names = new HashSet<>();

@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SameColors {
+public class SameColorsSet {
     public static void main(String[] args) {
         //Create two Sets of Colors:
         //    Set 1 : "red","green","black","white"

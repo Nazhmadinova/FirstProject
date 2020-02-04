@@ -1,11 +1,8 @@
 package CollectionFramework;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
-public class OddNumbers {
+public class OddNumbersSet {
     public static void main(String[] args) {
         //Create a Set of numbers and ask the user to enter to enter 5 numbers.
         //    - Go through each number and remove any numbers that are odd
@@ -27,7 +24,6 @@ public class OddNumbers {
                 nums.remove();
             }
         }
-
 
         System.out.println(numbers);
     }

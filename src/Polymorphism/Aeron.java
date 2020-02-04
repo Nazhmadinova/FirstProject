@@ -21,4 +21,8 @@ public class Aeron extends Chair implements Rollable{
     public void stepOnIt() {
         System.out.println("stepping on Aeron chair");
     }
+
+    public void ley(){
+
+    }
 }
