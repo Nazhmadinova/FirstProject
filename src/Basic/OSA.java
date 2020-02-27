@@ -2,16 +2,15 @@ package Basic;
 
 import java.nio.file.Paths.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class OSA {
 
-    public static void main(String[] arg) {
+    public static void main(String[] args) {
 
-        String a = "a";
-        String b = "b";
 
-        System.out.println(a==b);
     }
 
 }
