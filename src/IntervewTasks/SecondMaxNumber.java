@@ -1,5 +1,9 @@
 package IntervewTasks;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 public class SecondMaxNumber {
     // Create a method that will accept an int array.
     // Return the number which is the second to biggest number.
@@ -16,10 +20,11 @@ public class SecondMaxNumber {
                 second = max;
                 max = arr[i];
             }
-            if(arr[i] > second && arr[i] < max) {
+            else if(arr[i] > second) {
                 second = arr[i];
             }
         }
+
         return second;
     }
 

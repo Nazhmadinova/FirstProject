@@ -14,12 +14,15 @@ public class SetEx {
         cars.add("BMW");
         cars.add("Toyota");
 
-     //   System.out.println(cars);
+      //  System.out.println(cars);
       //  System.out.println(cars.get(1));  unordered does not compile
-       // List<String> list = new ArrayList<>(cars);
+        List<String> list = new ArrayList<>(cars);
+        Set<String> cars2 = new HashSet<>(list);
 
-        for(String car: cars){
-            System.out.println(car);
-        }
+//        for(String car: cars){
+//            System.out.println(car);
+//        }
+
+        System.out.println(cars2);
     }
 }
