@@ -27,7 +27,7 @@ public class InsertingParenthesisToBalance {
         return false;
     }
 
-    public static int isBalanced(String str){
+    public static int getMin(String str){
 
         Stack<Character> stack = new Stack<Character>();
 
@@ -49,8 +49,7 @@ public class InsertingParenthesisToBalance {
     }
 
     public static void main(String[] args) {
-        System.out.println(isBalanced("()))"));
-
+        System.out.println(getMin("))(("));
     }
 
 }

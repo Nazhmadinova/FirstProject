@@ -3,6 +3,7 @@ package IntervewTasks;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class BalancedSalesArray {
 
@@ -32,6 +33,31 @@ public class BalancedSalesArray {
         return -1;
     }
 
+    public static int balancedSum(List<Integer> sales){
+        int [] arr = new int [sales.size()];
+
+        for(int i = 0; i < sales.size(); i++){
+            arr[i] = sales.get(i);
+        }
+            int[] leftSum = new int[arr.length];
+            leftSum[0] = arr[0];
+            for (int i = 1; i < arr.length; i++)
+                leftSum[i] = leftSum[i - 1] + arr[i];
+
+
+            int[] rightSum = new int[arr.length];
+            rightSum[arr.length - 1] = arr[arr.length - 1];
+            for (int i = arr.length - 2; i >= 0; i--)
+                rightSum[i] = rightSum[i + 1] + arr[i];
+
+            for (int i = 1; i < arr.length - 1; i++)
+                if (leftSum[i] == rightSum[i])
+                    return i;
+
+            return -1;
+
+    }
+
     static int findElement2(int arr[], int size)
     {
         int right_sum = 0, left_sum = 0;
@@ -56,9 +82,11 @@ public class BalancedSalesArray {
     // Driver code
     public static void main(String args[])
     {
-        int arr[] = { 2,3,4,1,4,5};
-        int n = arr.length;
-        System.out.println(findElement2(arr, n));
+//        int arr[] = { 2,3,4,1,4,5};
+//        int n = arr.length;
+//        System.out.println(findElement2(arr, n));
+
+
     }
 
 }

@@ -3,7 +3,7 @@ package IntervewTasks;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UniqueLettersMap {
+public class SubstringUniqueLongestMap {
 
     public static int lengthOfLongestSubstring(String s) {
 
