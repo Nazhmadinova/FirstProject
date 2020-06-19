@@ -78,16 +78,16 @@ public class Task2Inhabitants {
 
             for(int i=0; i<inhabitants.length; i++){
 
-                if(i!=0&&i!=inhabitants.length-1&& inhabitants[i]==0){
+                if(i != 0 && i != inhabitants.length-1 && inhabitants[i] == 0){
                     nextDay[i-1] = inhabitants[i-1]/2;
-                    nextDay[i+1] =inhabitants[i+1]/2;
+                    nextDay[i+1] = inhabitants[i+1]/2;
                 }
 
-                if(i==0&&inhabitants[i]==0){
-                    nextDay[i+1]=inhabitants[i+1]/2;
+                if(i == 0 && inhabitants[i] == 0){
+                    nextDay[i+1] = inhabitants[i+1]/2;
                 }
 
-                if(i==inhabitants.length-1&&inhabitants[i]==0){
+                if(i == inhabitants.length-1 && inhabitants[i] == 0){
                     nextDay[i-1] = inhabitants[i-1]/2;
                 }
 
@@ -95,9 +95,9 @@ public class Task2Inhabitants {
             }
             System.out.println("Day "+day+ " "+Arrays.toString(nextDay));
 
-            for(int i=0; i<inhabitants.length; i++){
-                inhabitants[i]=nextDay[i];
-                sumOfppl+=inhabitants[i];
+            for(int i=0; i < inhabitants.length; i++){
+                inhabitants[i] = nextDay[i];
+                sumOfppl += inhabitants[i];
             }
 
 

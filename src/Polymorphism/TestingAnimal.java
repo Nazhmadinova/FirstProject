@@ -6,6 +6,9 @@ public class TestingAnimal {
         GermanShephard germanShephard = new GermanShephard();
         Animals dog = new Dog();
         String s = dog.type;
+        int n = dog.animalInt;
+        Dog a = (Dog)dog;
+        int sum = a.dogInt+a.animalInt;
         dog.breath();
 
         Trainable dog2 = new GermanShephard();

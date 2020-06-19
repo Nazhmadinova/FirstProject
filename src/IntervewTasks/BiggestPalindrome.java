@@ -8,31 +8,32 @@ public class BiggestPalindrome {
 
     //Create a method that will accept an ArrayList of Strings. Return the biggest Palindrome.
 
-    public static String biggestPalindrome(ArrayList<String> list){
-
-        Map<Integer, String> map = new HashMap<>();
-        ArrayList<Integer> nums = new ArrayList<>();
-
-        for(String str: list){
-            if(isPalindrome(str)){
-                map.put(str.length(), str);
-                nums.add(str.length());
-
-            }
-        }
-
-        if(nums != null){
-            int max = nums.get(0);
-            for(Integer num: nums){
-                if(max < num){
-                    max = num;
-                }
-            }
-
-            System.out.println(map.get(max));
-        }
-        return null;
-    }
+//    public static String biggestPalindrome(ArrayList<String> list){
+//
+//        Map<Integer, String> map = new HashMap<>();
+//        ArrayList<Integer> nums = new ArrayList<>();
+//
+//        for(String str: list){
+//            if(isPalindrome(str)){
+//                map.put(str.length(), str);
+//                nums.add(str.length());
+//
+//            }
+//        }
+//
+//        if(nums != null){
+//            int max = nums.get(0);
+//            for(Integer num: nums){
+//                if(max < num){
+//                    max = num;
+//                }
+//            }
+//
+//            System.out.println(map.get(max));
+//            return map.get(max);
+//        }
+//        return null;
+//    }
 
     public static boolean isPalindrome(String str){
         for(int i = 0; i < str.length()/2; i++){
@@ -65,7 +66,7 @@ public class BiggestPalindrome {
         list.add("ada");
         list.add("pacaacap");
         list.add("lacaacal");
-        biggestPalindrome(list);
+        biggestPalindrome2(list);
 
     }
 

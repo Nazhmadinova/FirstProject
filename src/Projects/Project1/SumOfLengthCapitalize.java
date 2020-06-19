@@ -31,7 +31,8 @@ public class SumOfLengthCapitalize {
 
         str3 =str3.toLowerCase();
         int space =str3.indexOf(" ");
-        System.out.println(str3.substring(0,1).toUpperCase()+str3.substring(1,space) +" "+ str3.substring(space+1,space+2).toUpperCase()+str3.substring(space+2));
+        System.out.println(str3.substring(0,1).toUpperCase()+str3.substring(1,space) +
+                " "+ str3.substring(space+1,space+2).toUpperCase()+str3.substring(space+2));
 
     }
 }

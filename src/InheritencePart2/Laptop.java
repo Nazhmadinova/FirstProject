@@ -24,6 +24,12 @@ public class Laptop {
 
     }
 
+    private int num;
+
+    private void a(){
+
+    }
+
     String model;
     int memorySize;
     protected String color;

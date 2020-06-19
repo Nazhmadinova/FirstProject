@@ -11,7 +11,7 @@ public class AppleMap {
 
         Map<String, Integer> map = new HashMap<>();
 
-        for(int i = 0; i <str.length(); i++){
+        for(int i = 0; i < str.length(); i++){
             String key = String.valueOf(str.charAt(i));
 
             if(!map.containsKey(key)){

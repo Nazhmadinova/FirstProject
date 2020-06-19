@@ -19,7 +19,7 @@ public class NumberPalindrome {
 
            long last = workingNum % 10;
             reverse = reverse * 10 + last;
-            workingNum/=10;
+            workingNum /= 10;
         }
 
         return number == reverse;

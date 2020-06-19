@@ -18,7 +18,7 @@ public class AnagramSaim {
             char one = wordOne.charAt(i);
             char two = wordTwo.charAt(i);
             // count[0] -> 'a'
-            // count[26] -> 'z'
+            // count[25] -> 'z'
             // 70 - 46
             count[one - 'a'] = count[one - 'a'] + 1;
             count[two - 'a'] = count[two - 'a'] - 1;

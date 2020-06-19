@@ -82,9 +82,9 @@ public class BalancedSalesArray {
     // Driver code
     public static void main(String args[])
     {
-//        int arr[] = { 2,3,4,1,4,5};
-//        int n = arr.length;
-//        System.out.println(findElement2(arr, n));
+        int arr[] = { 2,3,4,1,4,5};
+        int n = arr.length;
+        System.out.println(findElement(arr, n));
 
 
     }

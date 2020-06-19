@@ -4,12 +4,14 @@ public class ThirdBiggestNumber {
     public static int sm(int ... arr){
 
         int min = arr[0];
+        //int min = Integer.MIN_VALUE;
 
         for(int i = 0; i < arr.length; i++){
             if(min > arr[i]){
                 min = arr[i];
             }
         }
+
         int max = min;
         int second = min;
         int third = min;

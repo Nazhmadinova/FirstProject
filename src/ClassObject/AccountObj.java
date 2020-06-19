@@ -47,6 +47,5 @@ public class AccountObj {
         System.out.println("Balance: " +balance);
         System.out.println("Type: " +type);
         System.out.println("Account Number: " +accountNumber);
-
     }
 }

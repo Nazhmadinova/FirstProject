@@ -1,5 +1,7 @@
 package Loop;
 
+import java.lang.reflect.Array;
+
 public class DoWhile {
     public static void main (String[] args){
         int a = 1;
@@ -9,5 +11,9 @@ public class DoWhile {
 
         }while (a<10);
 
+
     }
+
+
+
 }

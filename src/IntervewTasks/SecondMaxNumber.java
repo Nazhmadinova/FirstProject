@@ -1,10 +1,11 @@
 package IntervewTasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SecondMaxNumber {
+public class  SecondMaxNumber {
     // Create a method that will accept an int array.
     // Return the number which is the second to biggest number.
     // /** Do not use sort method **
@@ -28,7 +29,22 @@ public class SecondMaxNumber {
         return second;
     }
 
+    public static int secondMax(int ... arr){
+        Arrays.sort(arr);
+        int last = arr[arr.length - 1];
+        int second = Integer.MIN_VALUE;
+        for(int i = arr.length - 2; i > 0; i-- ){
+            if(arr[i] < last){
+                second = arr[i];
+                break;
+            }
+        }
+
+        return second;
+    }
+
     public static void main(String[] args) {
         System.out.println(secondMaxNumber(2,3,1,4,5));
+        System.out.println(secondMax(2,3,1,4,5,6));
     }
 }

@@ -14,7 +14,8 @@ public class SetEx {
         cars.add("BMW");
         cars.add("Toyota");
 
-      //  System.out.println(cars);
+        System.out.println(cars);
+        System.out.println(cars);
       //  System.out.println(cars.get(1));  unordered does not compile
         List<String> list = new ArrayList<>(cars);
         Set<String> cars2 = new HashSet<>(list);

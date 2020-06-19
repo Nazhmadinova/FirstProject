@@ -1,6 +1,7 @@
 package IntervewTasks;
 
 import java.util.Stack;
+import java.util.Vector;
 
 public class InsertingParenthesisToBalance {
 
@@ -27,6 +28,7 @@ public class InsertingParenthesisToBalance {
         return false;
     }
 
+
     public static int getMin(String str){
 
         Stack<Character> stack = new Stack<Character>();
@@ -34,10 +36,10 @@ public class InsertingParenthesisToBalance {
         for(char c: str.toCharArray()){
 
             if(isOpenTerm(c)){
-                stack.push(c);
+                stack.push(c);  // adding
             }else{
-                if(!stack.isEmpty() && matches(stack.peek(), c)){
-                    stack.pop();
+                if(!stack.isEmpty() && matches(stack.peek(), c)){ //peek returns last element
+                    stack.pop();  //Removes and returns the top element
                 }else{
                     stack.push(c);
                 }

@@ -13,9 +13,12 @@ public class TestAnimal {
 
         print(animals, a -> a.canHop());
         print(animals, a -> a.canSwim());
-        animals.removeIf(a -> a.toString().charAt(0) != 'a');
+        animals.removeIf(a -> a.getSpecies().charAt(0) == 'f');
+
+        System.out.println(animals);
 
     }
+
 
     private static void print(List<Animal> animals, Predicate<Animal> checker) {
         for (Animal animal : animals) {
@@ -25,7 +28,7 @@ public class TestAnimal {
         System.out.println();
     }
 
-// if you wanna use just one interface
+// if you wanna use custom interface
 //    private static void print(List<Animal> animals, CheckAnimalTrait checker) {
 //        for (Animal animal : animals) {
 //            if (checker.test(animal))

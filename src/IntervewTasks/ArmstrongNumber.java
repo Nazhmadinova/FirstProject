@@ -1,5 +1,7 @@
 package IntervewTasks;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class ArmstrongNumber {
 
     //Create a method that will accept a number (int).
@@ -17,19 +19,35 @@ public class ArmstrongNumber {
     public static boolean isArmstrong(int number){
         String num = number + "";
         int power = num.length();
-
         int sum = 0;
 
-        for(int i = 0; i < num.length(); i++){
-            int digit = Integer.parseInt(num.charAt(i)+"");
-            //sum += Math.pow(digit,power);
+        int temp = number;
+        int lastNum;
+
+        while(temp != 0){
+            lastNum = temp % 10;
             int m = 1;
-            for(int j = 0; j < power; j++){
-                m *= digit;
+            for(int i =0; i < power; i ++){
+                m *= lastNum;
             }
             sum += m;
+            temp /= 10;
         }
 
+//        for(int i = 0; i < num.length(); i++){
+//            int digit = Integer.parseInt(num.charAt(i)+"");
+//            //sum += Math.pow(digit,power);
+//            int m = 1;
+//            for(int j = 0; j < power; j++){
+//                m *= digit;
+//            }
+//            sum += m;
+//        }
+
         return sum == number;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isArmstrong(154));
     }
 }

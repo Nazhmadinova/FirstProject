@@ -16,6 +16,7 @@ public class GroupingAnagrams {
 
             if(!map.containsKey(key)){
                 map.put(key, new ArrayList<>());
+                map.get(key).add(word);
             }else{
                 map.get(key).add(word);
             }

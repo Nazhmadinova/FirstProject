@@ -16,6 +16,8 @@ public class Animal {
     public boolean canSwim() { return canSwim; }
     public String toString() { return species; }
 
-
+    public String getSpecies(){
+        return species;
+    }
 
 }

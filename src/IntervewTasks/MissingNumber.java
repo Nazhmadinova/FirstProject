@@ -1,6 +1,8 @@
 package IntervewTasks;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MissingNumber {
 
@@ -23,9 +25,11 @@ public class MissingNumber {
                System.out.println("Missing number: "+i);
            }
         }
+
+        System.out.println(missingNumber(arr));
     }
 
-    public static int[] missingNumber(int ... numbers){
+    public static ArrayList<Integer> missingNumber(int ... numbers){
 
         int max = numbers[0];
         for(int i = 0; i < numbers.length; i++){
@@ -35,6 +39,21 @@ public class MissingNumber {
         }
 
         ArrayList<Integer> missing = new ArrayList<>();
+
+//        Map<Integer, Boolean> fullNumbers = new HashMap<>();
+//        for(int i = 0; i <= max; i++){
+//            fullNumbers.put(i, false);
+//        }
+//        for(int i = 0; i < numbers.length; i++){
+//            if(fullNumbers.containsKey(numbers[i])){
+//                fullNumbers.put(numbers[i],true);
+//            }
+//        }
+//        for(Integer key: fullNumbers.keySet()){
+//            if(!fullNumbers.get(key)){
+//                missing.add(key);
+//            }
+//        }
 
         for(int i = 0; i < max; i ++){
             boolean check = false;
@@ -49,10 +68,6 @@ public class MissingNumber {
             }
         }
 
-        int [] arr = new int[missing.size()];
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = missing.get(i);
-        }
-        return arr;
+        return missing;
     }
 }

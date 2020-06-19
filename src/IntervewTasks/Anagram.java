@@ -64,6 +64,7 @@ public class Anagram {
     public static void main(String[] args) {
         String w1 = "DC BA";
         String w2 = "bc da";
+
         w1 = w1.toLowerCase().replace(" ","");
         w2 = w2.toLowerCase().replace(" ","");
         char[] arrW1 = w1.toCharArray();

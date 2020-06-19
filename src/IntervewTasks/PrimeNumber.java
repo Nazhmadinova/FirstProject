@@ -24,6 +24,13 @@ public class PrimeNumber {
             if(isPrime(i)){
                 list.add(i);
             }
+//            boolean check = true;
+//            for(int j = 2; j < i; j++){
+//                if(i % j == 0){
+//                    check = false;
+//                }
+//                if(check) list.add(i);
+//            }
         }
         return list;
     }
