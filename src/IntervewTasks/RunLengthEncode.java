@@ -21,7 +21,7 @@ public class RunLengthEncode {
                 counter++;
             }else{
                 if(temp != 0){
-                    result += (counter + ""  + temp);
+                    result += (counter + "" + temp);
                 }
                 temp = c;
                 counter = 1;

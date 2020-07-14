@@ -33,7 +33,7 @@ public class  SecondMaxNumber {
         Arrays.sort(arr);
         int last = arr[arr.length - 1];
         int second = Integer.MIN_VALUE;
-        for(int i = arr.length - 2; i > 0; i-- ){
+        for(int i = arr.length - 2; i >= 0; i-- ){
             if(arr[i] < last){
                 second = arr[i];
                 break;
