@@ -11,6 +11,8 @@ public class IteratorExSet {
         names.add("Sara");
         names.add("Ben");
         names.add("Adam");
+        names.add("James");
+        System.out.println(names);
 
         Iterator<String> it = names.iterator();
 //        it.next(); // pointing to the "James"

@@ -52,9 +52,9 @@ public class FloodFill {
 
         // Recur for north, east, south and west
         floodFillUtil(screen, innerArrSize,x+1, y, prevC, newC);
-        floodFillUtil(screen,innerArrSize, x-1, y, prevC, newC);
-        floodFillUtil(screen,innerArrSize, x, y+1, prevC, newC);
-        floodFillUtil(screen,innerArrSize, x, y-1, prevC, newC);
+        floodFillUtil(screen, innerArrSize, x-1, y, prevC, newC);
+        floodFillUtil(screen, innerArrSize, x, y+1, prevC, newC);
+        floodFillUtil(screen, innerArrSize, x, y-1, prevC, newC);
     }
     // It mainly finds the previous color on (x, y) and calls floodFillUtil()
     static void floodFill(int screen[][],int innerArrSize, int x, int y, int newC)

@@ -38,8 +38,8 @@ public class InsertingParenthesisToBalance {
             if(isOpenTerm(c)){
                 stack.push(c);  // adding
             }else{
-                if(!stack.isEmpty() && matches(stack.peek(), c)){ //peek returns last element
-                    stack.pop();  //Removes and returns the top element
+                if(!stack.isEmpty() && matches(stack.peek(), c)){ //peek returns last(top) element
+                    stack.pop();  //Removes and returns the last(top) element
                 }else{
                     stack.push(c);
                 }

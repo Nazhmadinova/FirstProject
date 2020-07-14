@@ -18,7 +18,6 @@ public class linkedHashSet {
         set.add(null);
         set.add("z");
         set.add("a");
-
         System.out.println(set);
     }
 
